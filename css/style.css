@@ -1386,6 +1386,7 @@ section {
     line-height: 20px;
     color: var(--main_color_4);
     padding-bottom: 3px;
+    text-transform: unset;
 }
 
 .footer_name_text a {
@@ -1838,15 +1839,15 @@ section {
     }
     .about_me_border {
         width: 100%;
-        max-width: 400px;
+        max-width: 325px;
     }
     .about_me_title h1 {
         width: 100%;
-        max-width: 400px;
+        max-width: 325px;
     }
     .about_me_left .about_me_button_green {
         width: 100%;
-        max-width: 400px;
+        max-width: 325px;
         order: +2;
         display: flex;
         justify-content: center;
@@ -1991,10 +1992,8 @@ section {
         text-align: center;
     }
     .services_and_price_carts {
-        width: 327px;
         flex-wrap: wrap;
         gap: 20px;
-        margin-left: 50px;
     }
     .services_and_price_cart {
         flex: 1 1 calc(100% - 20px);
@@ -2012,6 +2011,9 @@ section {
     }
     .services_and_price_cart_two_buttom {
         display: none;
+    }
+    .services_and_price_btn .about_me_button_green {
+        margin-left: 0;
     }
     #challenge {
         display: flex;
@@ -2095,7 +2097,7 @@ section {
     }
     .contacts_hpone {
         display: flex;
-        align-items: start;
+        align-items: center;
         flex-direction: column;
         gap: 10px;
     }
@@ -2117,13 +2119,15 @@ section {
         text-align: center;
         width: 234px;
     }
-    .footer_name_text p {
-        display: flex;
-        align-items: flex-start;
-    }
     .footer_name_text a {
-        display: flex;
-        justify-content: flex-start;
+        margin-top: 5px;
+    }
+    .footer_name_text a::before {
+        content: '/';
+        margin-right: 4px;
+    }
+    .footer_name_text a:nth-child(2)::before {
+        display: none;
     }
     .footer_sections {
         display: flex;
